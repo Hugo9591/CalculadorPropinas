@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+# Calculadora de Propinas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una calculadora de propinas sencilla pero funcional, hecha con React y TypeScript. Tiene un menú con varios platillos, 
+puedes elegir la cantidad de cada uno y ver automáticamente cuánto pagarías, incluyendo la propina, lainformacion de los alimentos esta en un archivo aparte guardado en un arreglo de objetos simulando una api.
 
-Currently, two official plugins are available:
+## Funcion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- En el lado izquierdo se muestra un menú con diferentes comidas, cuando seleccionas un platillo, aparece del lado derecho, su nombre, precio y la cantidad en caso de que se seleccione la misma comida mas de dos veces tambien aparece una opcion para elegir si quieres dejar el 10, 20 o 50% de propina
+  
+- Se muestra:
+  - Subtotal(precio × cantidad)
+  - Propina(según el porcentaje elegido)
+  - Total final (suma del subtotal + propina)
 
-## Expanding the ESLint configuration
+## Tecnologías
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+React, Lógica de la interfaz
+Tailwind CSS, Estilos rápidos y modernos
+TypeScript, Tipado fuerte en componentes
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Instalación local
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+git clone https://github.com/Hugo9591/CalculadorPropinas.git
+cd calculadorPropinas
+npm install
+npm run dev
+Luego abre http://localhost:5173 en tu navegador.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Hecho con fines educativos y como práctica de React con TypeScript.
