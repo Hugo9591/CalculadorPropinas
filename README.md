@@ -13,18 +13,15 @@ puedes elegir la cantidad de cada uno y ver automáticamente cuánto pagarías, 
   - Total final (suma del subtotal + propina)
 
 ## Tecnologías
-
-
 React, Lógica de la interfaz
 Tailwind CSS, Estilos rápidos y modernos
 TypeScript, Tipado fuerte en componentes
 
 ## Instalación local
-
-git clone https://github.com/Hugo9591/CalculadorPropinas.git
-cd calculadorPropinas
-npm install
-npm run dev
-Luego abre http://localhost:5173 en tu navegador.
+- git clone https://github.com/Hugo9591/CalculadorPropinas.git
+- cd calculadorPropinas
+- npm install
+- npm run dev
+- Luego abre http://localhost:5173 en tu navegador.
 
 Hecho con fines educativos y como práctica de React con TypeScript.
